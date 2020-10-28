@@ -68,7 +68,7 @@
                             ?>
                             <div class="card">
                                 <div class="card-body">
-                                    <?php echo ($arregloPares[$i])?>
+                                    <?php echo ($arregloPares[$i]) ?>
                                 </div>
                             </div>
 

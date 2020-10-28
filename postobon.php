@@ -62,6 +62,9 @@
 
                         if ($horasTrabajadas <= 40) {
                             $sueldoSemana = $horasTrabajadas * 20000;
+                            $horasExtras = 0;
+                            $precioExtras=0;
+                            $precioSinExtras = $horasTrabajadas * 20000;
                         } elseif ($horasTrabajadas > 40) {
                             $horasExtras = $horasTrabajadas - 40;
                             $horasTrabajadas = $horasTrabajadas - $horasExtras;
@@ -80,8 +83,8 @@
                                 <p class="card-text">Sueldo Semana = $<?php echo ($sueldoSemana) ?> por concepto de:</p>
                                 <p>Horas trabajadas = <?php echo ($horasTrabajadas) ?></p>
                                 <p>Horas extras = <?php echo ($horasExtras) ?></p>
-                                <p>Sueldo por concepto de horas extras = $<?php echo ($precioExtras)?></p>
-                                <p>Sueldo por concepto de horas planas = $<?php echo($precioSinExtras)?></p>
+                                <p>Sueldo por concepto de horas extras = $<?php echo ($precioExtras) ?></p>
+                                <p>Sueldo por concepto de horas planas = $<?php echo ($precioSinExtras) ?></p>
                                 <a href="postobon.php" class="btn btn-primary">Volver a Calcular</a>
                             </div>
 
